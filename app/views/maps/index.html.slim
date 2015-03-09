@@ -7,8 +7,9 @@
             = m.name
             | (
             = m.likes
-            | ) 
-            | playing on:
+            | ) [
+            = link_to "videos", map_videos_path(m)
+            | ] playing on:
             ul
             - m.playing_on.map do |server| 
               li= server.name

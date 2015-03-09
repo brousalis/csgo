@@ -1,0 +1,7 @@
+h2
+  = @map.name
+  |  Videos
+
+ul
+  - @videos.each do |video|
+    li= video.youtube_url

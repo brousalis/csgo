@@ -43,3 +43,7 @@ Surf::Server.create([
   {name: 'AG:// NewbSurf #2 [Tier 1-3] AlliedGamers.net', url: 'ksfclan.com', ip: '74.91.113.128', port: '27015', created_by_user: u}, 
   {name: 'OGN:// NewbSurf #1 [Tier 1-2] OpticalGamingNetwork', url: 'opticalgaming.com', ip: '192.223.31.212', port: '27015', created_by_user: u}, 
 ])
+
+Surf::Video.create([
+  {title: "Surf Kitsune World Record", youtube_url: "https://www.youtube.com/watch?v=c6m8OUyshkE", map: Surf::Map.find_by_name('surf_kitsune'), created_by_user: u}
+])

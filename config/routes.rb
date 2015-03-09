@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   
   resources :maps, only: [ :index, :show ] do
     post 'like'
+
+    resources :videos, only: [ :index ]
   end
 
   root to: 'site#index'
